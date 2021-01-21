@@ -1,4 +1,4 @@
-var num = 12;
+var num = 8;
     for(var i=2; i<num; i++){
         if(num%i==0) {
             console.log("Its not prime number");
