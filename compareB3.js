@@ -1,5 +1,5 @@
 var personOne = 135;
-var personTwo = 120;
+var personTwo = 220;
 var personThree = 210;
 if (personOne > personTwo) {
     if (personOne > personThree) {
@@ -17,3 +17,7 @@ else{
         console.log("person3 have more money");
     }
 }
+
+
+var result = Math.max(personOne,personTwo,personThree);
+console.log("highest : ",result);
