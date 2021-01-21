@@ -5,7 +5,10 @@ var newNum2 = Math.floor(num2);
 console.log(newNum);
 console.log(newNum2);
 
-var  first = 11.4999;
-var  second = 13.9999;
-console.log(Math.round(first));
-console.log(Math.round(second));
+// var  first = 11.4999;
+// var  second = 13.9999;
+// console.log(Math.round(first));
+// console.log(Math.round(second));
+var dice = Math.random()*10;
+var dices = Math.round(dice);
+console.log(dices);
