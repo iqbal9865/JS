@@ -1,9 +1,9 @@
-//0+1+1+2+3+5+8+13+21+34+55......
-// var fibo = [0,1];
-// for(var i = 2; i<=10; i++) {
-//     fibo[i] = fibo[i-1] + fibo[i-2];
-// }
-// console.log(fibo);
+// 0+1+1+2+3+5+8+13+21+34+55......
+var fibo = [0,1];
+for(var i = 2; i<=10; i++) {
+    fibo[i] = fibo[i-1] + fibo[i-2];
+}
+console.log(fibo);
 function fiborec(n) {
     if (n == 0) {
         return 0
