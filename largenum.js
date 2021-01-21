@@ -15,3 +15,20 @@ for(var j =0; j<arr.length; j++) {
     }
 }
 console.log("lowest number : ",lowest);
+
+
+//using function i gonna solve this problem
+function largenumber(a) {
+    var high = a[0];
+    for(var k=0; k<a.length; k++) {
+        var digit = a[k];
+        if (high < digit) {
+            high = digit;
+        }
+        
+    }
+    return high;
+}
+var array = [10,200,3,321,5,1,45,23,64];
+var large = largenumber(array);
+console.log('large number using function : ', large);
