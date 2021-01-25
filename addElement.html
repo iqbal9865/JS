@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Add using DOM</title>
+</head>
+<style>
+    article{
+        margin: 7px;
+        padding: 7px;
+        border: 1px solid tomato;
+        border-radius: 1em;
+    }
+</style>
+<body>
+    <main>
+        <article id="first-article">
+            <h2>Article 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex blanditiis temporibus nihil iusto consequuntur dicta ad quisquam iste reprehenderit.</p>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae excepturi odit optio voluptatem quod qui iusto ad aut non numquam.</p>
+        </article>
+        <article>
+            <h2>Article 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste laudantium doloribus, eaque tempora ad pariatur repudiandae assumenda error, nemo necessitatibus porro modi explicabo alias corrupti nulla accusamus at.</p>
+        </article>
+    </main>
+    
+    <script>
+        var firstArt = document.getElementById('first-article');
+        var newParagraph = document.createElement('p');
+        newParagraph.innerHTML = 'This is Added using JavaScript';
+        firstArt.appendChild(newParagraph);
+    </script>
+</body>
+</html>

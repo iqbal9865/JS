@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event</title>
+</head>
+<body>
+    <!-- <h1 onclick="clickWork()">Hi This is Click Event</h1>
+    <button onclick="clickWork()">Click ME</button> -->
+
+        <button>Click ME 1</button>
+        <button id="second-btn">Click ME 2</button>
+        <button>Click ME 3</button>
+    <script>
+        // function clickWork(){
+        //     console.log('Change When Clicked')
+        // }
+        // function handle(){
+        //     document.body.style.backgroundColor = 'cyan';
+        // }
+        // var task = document.getElementById('second-btn');
+        // // task.onclick = handle;
+        // task.addEventListener('click',handle);
+        document.getElementById('second-btn').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'cyan';
+        })
+    </script>
+</body>
+</html>
