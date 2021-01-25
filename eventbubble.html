@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubble</title>
+</head>
+<body>
+    <div class="container">
+        <h2>My list</h2>
+        <ul id="my-list">
+            <li class="item">my list 1</li>
+            <li class="item">my list 2</li>
+            <li class="item">my list 3</li>
+            <li class="item">my list 4</li>
+            <li class="item">my list 5</li>
+        </ul>
+    </div>
+
+    <script>
+        var items = document.getElementsByClassName('item');
+        for (let i = 0; i < items.length; i++) {
+            var item = items[i];
+            item.addEventListener('click', function(){
+                event.target.parentNode.removeChild(event.target);
+            })
+        }
+    </script>
+</body>
+</html>
