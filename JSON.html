@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>Hi I am just start learning API</h1>
+    <h1>API means Application Programming Interface</h1>
+
+
+    <script>
+        const obj = {
+            id:173462142,
+            name:`Iqbal Ahmed Emon`,
+            number:[123,234,544]
+            };
+        const userJSON = JSON.stringify(obj);
+        console.log(userJSON);          
+        
+        const userFromJSON = JSON.parse(userJSON);
+        console.log(userFromJSON) ;
+    
+    </script>
+</body>
+</html>
