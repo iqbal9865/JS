@@ -30,7 +30,9 @@ const singer = {
 // myInfo.getCharge();
 const heroBillCharge = myInfo.getCharge.bind(hero);
 heroBillCharge(250000);
-heroBillCharge(22145);
+heroBillCharge(200000);
+console.log(hero.salary);
+myInfo.getCharge.call(hero,50000);
 console.log(hero.salary);
 
 
