@@ -5,9 +5,9 @@ const myInfo = {
         return this.firstName +' '+ this.lastName;
     },
     salary: 25000,
-    getCharge: function(amount){
+    getCharge: function(amount,tips,tax){
         console.log(this);
-        this.salary = this.salary - amount;
+        this.salary = this.salary - amount - tips - tax;
         return this.salary;
     }
 }
@@ -29,12 +29,13 @@ const singer = {
 }
 // myInfo.getCharge();
 const heroBillCharge = myInfo.getCharge.bind(hero);
-heroBillCharge(250000);
-heroBillCharge(200000);
+heroBillCharge(250000,43,543);
+heroBillCharge(200000,43,43);
 console.log(hero.salary);
-myInfo.getCharge.call(hero,50000);
+myInfo.getCharge.call(hero,50000,432,435);
 console.log(hero.salary);
-
+myInfo.getCharge.apply(hero,[23344,345,53]);
+console.log(hero.salary);
 
 const singerBill = myInfo.getCharge.bind(singer);
 singerBill(12234);
