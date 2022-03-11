@@ -52,7 +52,7 @@ console.log(carName);
 // bikeName = "Kawasaki Ninja";
 // let bikeName;
 // console.log(bikeName);
-// hoisting faild for there are no default value as undefined
+// hoisting faild for there are no default value as undefined, i mean not initialize
 
 
 
