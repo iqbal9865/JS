@@ -50,3 +50,19 @@ let z = w.valueOf();
 console.log(typeof w);
 
 console.log(typeof Number(false));
+
+const date = Date();
+console.log(date)
+
+const numbers = Number(new Date("1970-01-02"))
+console.log(numbers)
+
+//--- all about array -----//
+let array = [10, 2, 20, 300, 54, 65];
+let updatedArray = [...array, 87]
+console.log('original arrray: '+array)
+console.log('updated number: '+ updatedArray)
+let maximumNumber = Math.max(...array);
+console.log(maximumNumber)
+// console.log(array)
+// console.log(...array)
