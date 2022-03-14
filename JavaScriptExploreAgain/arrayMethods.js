@@ -20,10 +20,12 @@ const products = [
 ]
 
 console.log('Access Array Element using forEach')
-products.forEach(function (product) {
-   console.log(product.name)
-   console.log(product.price)
-   console.log('------')
+products.forEach(function (product, index) {
+   if(index === 0) {
+      console.log(product.name)
+      console.log(product.price)
+      console.log('------')
+   }
 })
 
 // map methods
