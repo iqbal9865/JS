@@ -66,11 +66,11 @@ if(true) {
 console.log(cse)
 //networking
 
-let eee = 'circuit';
+const eee = 'circuit';
 console.log(eee);
 //circuit
 if(true) {
-    let eee = "math";
+    const eee = "math";
     console.log(eee)
     //math
 }
