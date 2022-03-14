@@ -64,5 +64,5 @@ console.log('original arrray: '+array)
 console.log('updated number: '+ updatedArray)
 let maximumNumber = Math.max(...array);
 console.log(maximumNumber)
-// console.log(array)
+console.log(typeof array)
 // console.log(...array)
