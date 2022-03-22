@@ -6,13 +6,13 @@ class Person {
         this.qualification = qualification;
     }
 }
-class Iqbal extends Person{
+class Iqbal extends Person {
     constructor (name, age, phone, qualification, isMarrid) {
         super(name, age, phone, qualification)
         this.isMarrid = isMarrid;
     }
 }
-class Hriday extends Person{
+class Hriday extends Person {
     constructor (name, age, phone, qualification, hasGF) {
         super(name, age, phone, qualification)
         this.hasGF = hasGF;
