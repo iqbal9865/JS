@@ -13,5 +13,5 @@ const personTwo = {
     firstName: 'Naim',
     lastName: 'Hossian'
 }
-const names = person.fullName.call(personOne)
-console.log(names)
+const names = person.fullName.bind(personOne)
+console.log(names())
