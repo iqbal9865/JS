@@ -1,4 +1,4 @@
-var num = 2000;
+var num = 200;
 switch(num) {
     case 100:
         console.log('value is 100');

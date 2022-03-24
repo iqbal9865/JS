@@ -1,4 +1,4 @@
-var marks = 81;
+var marks = 71;
 if(marks >= 80) {
     console.log("A+ (Excellent)")
 }

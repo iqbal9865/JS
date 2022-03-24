@@ -1,8 +1,17 @@
-var arr = [1020,3200,45,253,6054,33,52,57,980,659];
-var max = arr[0];
-for(var i = 0; i<arr.length; i++) {
-    if (arr[i]>max) {
-        max = arr[i];
+const arr = [34,24,23,555,67,88,222,333,53];
+var max=0;
+for(var i=1; i <= arr.length; i++) {
+    if(arr[i] > max) {
+        max = arr[i]
     }
 }
-console.log(max)
+console.log('maximum value: '+max)
+
+
+// array sum
+const arr1 = [1,2,3,4,5,6,7,8,9,10];
+let sum = 0;
+for(let i = 0; i < arr1.length; i++) {
+    sum += arr1[i];
+}
+console.log('sum of array: '+ sum)
