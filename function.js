@@ -25,3 +25,20 @@ console.log(sumTwo);
 /*this
 is 
 a comment */
+
+
+function greeting(name) {
+    //alert('Hello ' + name);
+    console.log("Hello, "+name);
+  }
+  
+  function processUserInput(callback) {
+     console.log(callback);
+    //var name = prompt('Please enter your name.');
+    let name = "sajon"
+    callback(name);
+  }
+  
+  processUserInput(function greeting(name) {
+      console.log("Hello, " + name);
+  });

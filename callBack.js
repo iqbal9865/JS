@@ -1,14 +1,11 @@
-function callBack(name,age,task){
-    console.log('name : ',name);
-    console.log('Age : ',age);
-    task();
-}
-function coding(){
-    console.log('Iqbal Still coding right now');
-}
-function sleep(){
-    console.log('Someone preparation for sleep');
+function greetings (name) {
+    console.log('Good Morning ' + name) 
 }
 
-callBack('Iqbal',22,coding);
-callBack('Someone',21,sleep);
+function greetingsDeliver (greetings) {
+    const name = 'JavaScript';
+    greetings(name)
+}
+greetingsDeliver(greetings)
+
+// a callback function is pass as a perameter into another function and call inside the function.
